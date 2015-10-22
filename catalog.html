@@ -5,109 +5,88 @@
     <title>Отели Седоны</title>
   </head>
   <body>
-    <header>
-      <div class="container clearfix">
-        <nav class="main-navigation">
-          <ul>
-            <li>
-              <a href="#">Информация</a>
-            </li>
-            <li>
-              <a href="#">Фото и видео</a>
-            </li>
-            <li>
-              <a href="#">Карта штата</a>
-            </li>
-            <li>
-              <a href="#">Гостиницы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-   <div class="container">
-     <div class="catalog-content-line">
-       <div class="infrastructure">
-         <p class="features-title">Инфраструктура</p>
-         <ul>
-           <li>
-             <input type="checkbox" name="SwimmingPool" id="SwimmingPool" checked>
-             <label for="SwimmingPool">Бассейн</label>
-           </li>
-           <li>
-             <input type="checkbox" name="infrastructure" id="Parking">
-             <label for="Parking">Парковка</label>
-           </li>
-           <li>
-             <input type="checkbox" name="infrastructure" id="WiFi">
-             <label for="WiFi">Wi-Fi</label>
-           </li>
-         </ul>
-       </div>
-       <div class="type-of-residence">
-         <p class="features-title">Тип жилья</p>
-         <ul>
-           <li>
-             <input type="checkbox" name="SwimmingPool" id="Hotel" checked>
-             <label for="Hotel">Гостинница</label>
-           </li>
-           <li>
-             <input type="checkbox" name="infrastructure" id="Motel" checked>
-             <label for="Motel">Мотель</label>
-           </li>
-           <li>
-             <input type="checkbox" name="infrastructure" id="Apartment" checked>
-             <label for="Apartment">Апартаменты</label>
-           </li>
-         </ul>
-       </div>
-       <div class="slider">
-         <p class="features-title">Стоимость в сутки (Р):</p>
-         <table class="slider-table">
-           <tr>
-             <td>От 0</td>
-             <td>До 3000</td>
-           </tr>
-         </table>
-         <div class="slider-line">
-         </div>
-         <a href="#" class="btn-slider">Показать</a>
-       </div>
-     </div>
-     <div class="catalog-hotel">
-       <div class="catalog-hotel-line">
-         <p>Найдено: 3</p>
-         <ul>
-           <li>
-             <a href="#" class="sort hvr">По цене</a>
-           </li>
-           <li>
-             <a href="#" class="sort">По типу</a>
-           </li>
-           <li>
-             <a href="#" class="sort">По рейтингу</a>
-           </li>
-         </ul>
-         <div class="catalog-hotel-line-left">
-           <img src="http://placehold.jpg" width="135" height="90" alt="">
+    <div class="wrapper">
+      <header class="main-header">
+          <nav class="main-navigation">
+            <figure class="logo">
+              <a href="#">
+                <img src="logo.png" alt="" widht="" height="">
+              </a>
+            </figure>
+            <ul>
+              <li>
+                  <a href="#">Информация</a>
+              </li>
+              <li>
+                  <a href="#" class="offset">Фото и видео</a>
+              </li>
+              <li>
+                  <a href="#">Карта штата</a>
+              </li>
+              <li>
+                  <a href="#">Гостиницы</a>
+              </li>
+            </ul>
+          </nav>
+      </header>
+        <div class="catalog">
+          <div class="catalog-filter">
+            <form action="#" method="get">
+                <h2 class="catalog-title">Инфраструктура</h2>
+                <input type="checkbox" name="SwimmingPool" id="SwimmingPool" checked>
+                <label for="SwimmingPool">Бассейн</label>
+                <input type="checkbox" name="infrastructure" id="Parking">
+                <label for="Parking">Парковка</label>
+                <input type="checkbox" name="infrastructure" id="WiFi">
+                <label for="WiFi">Wi-Fi</label>
+                <h2 class="catalog-title">Тип жилья</h2>
+                <input type="checkbox" name="SwimmingPool" id="Hotel" checked>
+                <label for="Hotel">Гостинница</label>
+                <input type="checkbox" name="infrastructure" id="Motel" checked>
+                <label for="Motel">Мотель</label>
+                <input type="checkbox" name="infrastructure" id="Apartment" checked>
+                <label for="Apartment">Апартаменты</label>
+            </form>
+          </div>
+         <div class="slider">
+          <h2 class="slider-title">Стоимость в сутки (Р):</h2>
+           <div class="slider-table">
+             <span class="slider-table-left">От 0</span>
+             <span class="slider-table-right">До 3000</span>
+           </div>
+           <div class="slider-line">
+           </div>
+             <a href="#" class="btn-slider">Показать</a>
          </div>
        </div>
-     </div>
-   </div>
-    <footer class="main-footer">
-      <section class="hashtag">
-        #VISITSEDONA
-      </section>
-      <section class="footer-social">
-        <a href="#" class="social-btn social-btn-twit">Твиттер</a>
-        <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-        <a href="#" class="social-btn social-btn-youtube">Ютуб</a>
-      </section>
-      <section class="footer-copyright">
-        <p>Website by:</p>
-        <a href="#" class="btn">htmlacademy.ru</a>
-      </section>
-    </footer>
+       <div class="catalog-hotel">
+         <div class="catalog-hotel-line">
+             <p>Найдено: 3</p>
+           <ul>
+             <li>
+                 <a href="#" class="sort hvr">По цене</a>
+             </li>
+             <li>
+                 <a href="#" class="sort">По типу</a>
+             </li>
+             <li>
+                 <a href="#" class="sort">По рейтингу</a>
+             </li>
+           </ul>
+           <div class="catalog-hotel-line-left">
+             <img src="http://placehold.jpg" width="135" height="90" alt="">
+           </div>
+         </div>
+       </div>
+      <footer class="main-footer">
+        <a href="#" class="hashtag">#VISITSEDONA</a>
+        <div class="social">
+            <a href="#" class="social-btn social-btn-twit">Твиттер</a>
+            <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+            <a href="#" class="social-btn social-btn-youtube">Ютуб</a>
+        </div>
+        <div class="main-footer-copyright">Website by:<a href="#" class="btn">htmlacademy.ru</a></div>
+      </footer>
+    </div>
   </body>
 </html>
