@@ -19,3 +19,85 @@ h2{
   color: 000000;
   font-weight: Bold;
 }
+.wrapper{
+  min-width: 768px;
+  max-width: 1200px;
+  margin: 0px auto;
+}
+.main-header{
+  min-height: 56px;
+}
+.main-navigation{
+  padding: 22px 70px 22px 70px;
+}
+ul{
+
+}
+.promo-block{
+  height: 432px;
+  padding: 62px 0px 0px;
+}
+.reasons-header{
+  margin: 58px auto;
+  text-align: center;
+}
+.reasons-title{
+  margin-bottom: 32px;
+}
+.reason{
+  width: 33.333%;
+  padding: 57px auto;
+  height: 256px;
+  float: left;
+}
+.reason-home{
+  height: 330px;
+}
+.reason-row:nth-child(1){
+  background-color: 81b3d2;
+}
+.reason-row:nth-child(5){
+  background-color: 81b3d2;
+}
+.reason-row-gray{
+  background-color: eeeeee;
+}
+.search{
+  padding: 50px 0px;
+  text-align: center;
+}
+.hashtag{
+  display: block;
+  height: 33.333%;
+  float: left;
+}
+.social{
+  height: 33.333%;
+  float: left;
+}
+.main-footer-copyright{
+  height: 33.333%;
+  float: left;
+}
+.social-btn{
+  display: inline-block;
+  margin-left: 6px;
+  height: 48px;
+  width: 46px;
+}
+.catalog{
+  height: 217px;
+
+}
+.catalog-filter{
+  float: left;
+  padding: 31px 0px;
+}
+.catalog-title{
+  margin-right: 110px;
+}
+.slider{
+  float: right;
+  margin-left: 330px;
+  padding: 30px 70px 30px 0px;
+}
