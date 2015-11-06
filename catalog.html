@@ -3,35 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>Отели Седоны</title>
+    <link rel="stylesheet" href="css/style.css"></link>
+    <link rel="stylesheet" href="css/normalize.css"></link>
   </head>
   <body>
     <div class="wrapper">
       <header class="main-header">
-          <nav class="main-navigation">
-            <figure class="logo">
-              <a href="#">
-                <img src="logo.png" alt="" widht="" height="">
-              </a>
-            </figure>
-            <ul>
-              <li>
-                  <a href="#">Информация</a>
-              </li>
-              <li>
-                  <a href="#" class="offset">Фото и видео</a>
-              </li>
-              <li>
-                  <a href="#">Карта штата</a>
-              </li>
-              <li>
-                  <a href="#">Гостиницы</a>
-              </li>
-            </ul>
-          </nav>
+        <nav class="main-navigation">
+          <!--
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li class="offset">
+              <a href="#">Фото и видео</a>
+            </li>
+           </ul>
+          <figure class="logo">
+            <a href="#">
+            </a>
+          </figure>
+          <ul>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li>
+              <a href="#">Гостиницы</a>
+            </li>
+          </ul>
+            -->
+        </nav>
       </header>
-        <div class="catalog">
-          <div class="catalog-filter">
-            <form action="#" method="get">
+
+        <div class="catalog clearfix">
+            <form class="catalog-filter clearfix" action="#" method="get">
                 <h2 class="catalog-title">Инфраструктура</h2>
                 <input type="checkbox" name="SwimmingPool" id="SwimmingPool" checked>
                 <label for="SwimmingPool">Бассейн</label>
@@ -39,6 +44,8 @@
                 <label for="Parking">Парковка</label>
                 <input type="checkbox" name="infrastructure" id="WiFi">
                 <label for="WiFi">Wi-Fi</label>
+              </form>
+              <form class="catalog-filter clearfix" action="#" method="get">
                 <h2 class="catalog-title">Тип жилья</h2>
                 <input type="checkbox" name="SwimmingPool" id="Hotel" checked>
                 <label for="Hotel">Гостинница</label>
@@ -46,47 +53,100 @@
                 <label for="Motel">Мотель</label>
                 <input type="checkbox" name="infrastructure" id="Apartment" checked>
                 <label for="Apartment">Апартаменты</label>
-            </form>
-          </div>
-         <div class="slider">
-          <h2 class="slider-title">Стоимость в сутки (Р):</h2>
-           <div class="slider-table">
-             <span class="slider-table-left">От 0</span>
-             <span class="slider-table-right">До 3000</span>
-           </div>
-           <div class="slider-line">
-           </div>
-             <a href="#" class="btn-slider">Показать</a>
+              </form>
+              <div class="slider">
+               <h2 class="slider-title">Стоимость в сутки (Р):</h2>
+                <div class="slider-table">
+                  <span class="slider-table-left">От 0</span>
+                  <span class="slider-table-right">До 3000</span>
+                </div>
+                <a href="#" class="btn-slider">Показать</a>
+              </div>
+              <div class="catalog-sort-search clearfix">
+                <div class="search-number">Найдено: 3</div>
+                <div class="sort-type">
+                  <a href="#">Сортировка:</a>
+                  <a href="#" class="active">По цене</a>
+                  <a href="#">По типу</a>
+                  <a href="#">По функционалу</a>
+                </div>
+                <div class="sort-direction"></div>
+              </div>
+
+              <div class="catalog-item clearfix">
+                <div class="catalog-item-photo">
+                  <img width="135" height="90" alt="Amara Resort & Spa" src="img/amara-resort-hotel.jpg">
+                </div>
+                <div class="catalog-item-description clearfix">
+                  <h2 class="catalog-item-title">Amara Resort & Spa</h2>
+                  <div class="catalog-item-housing">
+                    <p class="catalog-item-housing-title">Мотель</p>
+                    <a href="#" class="btn more-info">Подробнее</a>
+                  </div>
+                  <div class="catalog-item-price">
+                    <p class="catalog-item-price-title">От 3500 Р.</p>
+                    <a href="#" class="btn booking">Забронировать</a>
+                  </div>
+                </div>
+                <div class="catalog-item-stars-rating">
+                  <div class="catalog-item-stars"></div>
+                  <div class="catalog-item-rating">Рейтинг: 8,5</div>
+                </div>
+              </div>
+
+              <div class="catalog-item clearfix">
+                <div class="catalog-item-photo">
+                  <img width="135" height="90" alt="Desert Qual Inn" src="img/desert-qual-hotel.jpg">
+                </div>
+                <div class="catalog-item-description clearfix">
+                  <h2 class="catalog-item-title">Desert Qual Inn</h2>
+                  <div class="catalog-item-housing">
+                    <p class="catalog-item-housing-title">Гостиница</p>
+                    <a href="#" class="btn more-info">Подробнее</a>
+                  </div>
+                  <div class="catalog-item-price">
+                    <p class="catalog-item-price-title">От 2000 Р.</p>
+                    <a href="#" class="btn booking">Забронировать</a>
+                  </div>
+                </div>
+                <div class="catalog-item-stars-rating">
+                  <div class="catalog-item-stars"></div>
+                  <div class="catalog-item-rating">Рейтинг: 8,9</div>
+                </div>
+              </div>
+
+              <div class="catalog-item clearfix">
+                <div class="catalog-item-photo">
+                  <img width="135" height="90" alt="Villas at Poco Diablo" src="img/villas-at-poco-diablo-hotel.jpg">
+                </div>
+                <div class="catalog-item-description clearfix">
+                  <h2 class="catalog-item-title">Villas at Poco Diablo</h2>
+                  <div class="catalog-item-housing">
+                    <p class="catalog-item-housing-title">Апартаменты</p>
+                    <a href="#" class="btn more-info">Подробнее</a>
+                  </div>
+                  <div class="catalog-item-price">
+                    <p class="catalog-item-price-title">От 4000 Р.</p>
+                    <a href="#" class="btn booking">Забронировать</a>
+                  </div>
+                </div>
+                <div class="catalog-item-stars-rating">
+                  <div class="catalog-item-stars"></div>
+                  <div class="catalog-item-rating">Рейтинг: 9,2</div>
+                </div>
+              </div>
+            </div>
+       <footer class="main-footer catalog-footer clearfix">
+         <div class="hashtag">
+           <a href="#">#VISITSEDONA</a>
          </div>
-       </div>
-       <div class="catalog-hotel">
-         <div class="catalog-hotel-line">
-             <p>Найдено: 3</p>
-           <ul>
-             <li>
-                 <a href="#" class="sort hvr">По цене</a>
-             </li>
-             <li>
-                 <a href="#" class="sort">По типу</a>
-             </li>
-             <li>
-                 <a href="#" class="sort">По рейтингу</a>
-             </li>
-           </ul>
-           <div class="catalog-hotel-line-left">
-             <img src="http://placehold.jpg" width="135" height="90" alt="">
-           </div>
-         </div>
-       </div>
-      <footer class="main-footer">
-        <a href="#" class="hashtag">#VISITSEDONA</a>
         <div class="social">
-            <a href="#" class="social-btn social-btn-twit">Твиттер</a>
-            <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-            <a href="#" class="social-btn social-btn-youtube">Ютуб</a>
+          <a href="#" class="social-btn social-btn-twit">Твиттер</a>
+          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+          <a href="#" class="social-btn social-btn-youtube">Ютуб</a>
         </div>
-        <div class="main-footer-copyright">Website by:<a href="#" class="btn">htmlacademy.ru</a></div>
-      </footer>
+        <div class="copyright">Website by:<a href="#" class="btn">htmlacademy.ru</a></div>
+       </footer>
     </div>
   </body>
 </html>
