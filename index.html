@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
-    <link rel="stylesheet" href="css/style.css"></link>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css"></link>
+    <link rel="stylesheet" href="css/style.css"></link>
   </head>
   <body>
     <div class="wrapper">
@@ -12,29 +13,27 @@
         <nav class="main-navigation">
           <ul>
             <li>
-              <a href="#">Информация</a>
+              <a href="#" class="active">Информация</a>
             </li>
-            <li class="offset">
+            <li>
               <a href="#">Фото и видео</a>
             </li>
-           </ul>
-          <figure class="logo">
-            <a href="#">
-            </a>
-          </figure>
-          <ul>
-            <li>
+            <li class="offset">
               <a href="#">Карта штата</a>
             </li>
-            <li>
+            <li class="offset">
               <a href="#">Гостиницы</a>
             </li>
-          </ul>
+           </ul>
+          <div class="logo">
+            <a href="#">
+              <img width="138" height="70" alt="logo" src="img/logo.png">
+            </a>
+          </div>
         </nav>
       </header>
-      <div class="promo-block">
-        <div class="promo-block-text">Welcome -- to the gorgeous -- Sedona "Because the Grand Canyon sucks!"</div>
-        <div class="promo-block-shape"></div>
+      <div class="promo-block promo-block-shape">
+        <div class="promo-block-text"><img width="458" height="352" alt="Welcome -- to the gorgeous -- Sedona "Because the Grand Canyon sucks!"" src="img/background-label-index.png"></div>
       </div>
       <article class="reasons clearfix">
         <header class="reasons-header">
@@ -45,13 +44,14 @@
           <div class="reason">
             <h2 class="reason-title">Настоящий городок</h2>
             <div class="reason-number">-№1-</div>
-            <p>Седона не аттракцион для туристов, в нем течет своя жизнь</p>
+            <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <figure class="reason-picture">
-          </figure>
+          <div class="reason-picture">
+            <img alt="" width="800" height="256" src="img/reasons-town.jpg"></img>
+          </div>
         </div>
         <div class="reason-row clearfix">
-          <div class="reason reason-image">
+          <div class="reason reason-image reason-home">
             <div class="reason-home"></div>
             <h2 class="reason-title">Жилье</h2>
             <p>Рекомендуем пожить в настоящем мотеле,все как в кино!</p>
@@ -102,6 +102,7 @@
         <div class="search-button"><a href="#">Поиск гостиницы в Седоне</a></div>
       </div>
       <div class="map">
+        <!-- <div class="map-canvas"> </div> -->
         <div class="search-form">
           <form action="#" method="get">
             <input type="date" name="date" value="24 апреля 2014" placeholder="Дата заезда">
@@ -122,6 +123,6 @@
          <div class="copyright">Website by:<a href="#" class="btn">htmlacademy.ru</a></div>
         </footer>
       </div>
-    </div>
+
   </body>
 </html>

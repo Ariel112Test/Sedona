@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Отели Седоны</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css"></link>
     <link rel="stylesheet" href="css/normalize.css"></link>
   </head>
@@ -54,14 +55,24 @@
                 <input type="checkbox" name="infrastructure" id="Apartment" checked>
                 <label for="Apartment">Апартаменты</label>
               </form>
-              <div class="slider">
-               <h2 class="slider-title">Стоимость в сутки (Р):</h2>
-                <div class="slider-table">
-                  <span class="slider-table-left">От 0</span>
-                  <span class="slider-table-right">До 3000</span>
+
+              <form action="form.php" method="GET">
+                <div class="range-filter">
+                  <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="3000"></label>
+                  </div>
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
                 </div>
-                <a href="#" class="btn-slider">Показать</a>
-              </div>
+
+              </form>
+
               <div class="catalog-sort-search clearfix">
                 <div class="search-number">Найдено: 3</div>
                 <div class="sort-type">
@@ -94,6 +105,8 @@
                 </div>
               </div>
 
+
+<!--
               <div class="catalog-item clearfix">
                 <div class="catalog-item-photo">
                   <img width="135" height="90" alt="Desert Qual Inn" src="img/desert-qual-hotel.jpg">
@@ -134,8 +147,10 @@
                   <div class="catalog-item-stars"></div>
                   <div class="catalog-item-rating">Рейтинг: 9,2</div>
                 </div>
-              </div>
-            </div>
+               </div>
+             -->
+           </div>
+
        <footer class="main-footer catalog-footer clearfix">
          <div class="hashtag">
            <a href="#">#VISITSEDONA</a>
@@ -147,6 +162,7 @@
         </div>
         <div class="copyright">Website by:<a href="#" class="btn">htmlacademy.ru</a></div>
        </footer>
-    </div>
+
+  </div>
   </body>
 </html>
