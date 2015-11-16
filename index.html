@@ -13,34 +13,34 @@
         <nav class="main-navigation">
           <ul>
             <li>
-              <a href="#" class="active">Информация</a>
+              <a href="index.html" class="active">Информация</a>
             </li>
-            <li>
+            <li class="offset">
               <a href="#">Фото и видео</a>
             </li>
-            <li class="offset">
+            <li>
               <a href="#">Карта штата</a>
             </li>
-            <li class="offset">
-              <a href="#">Гостиницы</a>
+            <li>
+              <a href="catalog.html">Гостиницы</a>
             </li>
            </ul>
           <div class="logo">
-            <a href="#">
+            <a href="index.html">
               <img width="138" height="70" alt="logo" src="img/logo.png">
             </a>
           </div>
         </nav>
       </header>
-      <div class="promo-block promo-block-shape">
-        <div class="promo-block-text"><img width="458" height="352" alt="Welcome -- to the gorgeous -- Sedona "Because the Grand Canyon sucks!"" src="img/background-label-index.png"></div>
+      <div class="promo-block">
+        <img width="458" height="352" alt="Welcome -- to the gorgeous -- Sedona "Because the Grand Canyon sucks!"" src="img/background-label-index.png">
       </div>
       <article class="reasons clearfix">
         <header class="reasons-header">
           <h1 class="reasons-title">Седона-небольной городок в Аризоне, заслуживающий большего!</h1>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </header>
-        <div class="reason-row reason-row-image clearfix">
+        <div class="reason-row reason-row-image">
           <div class="reason">
             <h2 class="reason-title">Настоящий городок</h2>
             <div class="reason-number">-№1-</div>
@@ -50,33 +50,31 @@
             <img alt="" width="800" height="256" src="img/reasons-town.jpg"></img>
           </div>
         </div>
-        <div class="reason-row clearfix">
+        <div class="reason-row">
           <div class="reason reason-image reason-home">
-            <div class="reason-home"></div>
             <h2 class="reason-title">Жилье</h2>
             <p>Рекомендуем пожить в настоящем мотеле,все как в кино!</p>
           </div>
-          <div class="reason reason-image">
-            <div class="reason-food"></div>
+          <div class="reason reason-image reason-food">
             <h2 class="reason-title">Еда</h2>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
-          <div class="reason reason-image">
-            <div class="reason-souvenirs"></div>
+          <div class="reason reason-image reason-souvenirs">
             <h2 class="reason-title">Сувениры</h2>
             <p>Не только китайского, но и местного производства!</p>
           </div>
         </div>
-        <div class="reason-row reason-row-image clearfix">
-          <figure class="reason-picture-inver">
-          </figure>
+        <div class="reason-row reason-row-image">
+          <div class="reason-picture-inver">
+            <img alt="" width="800" height="256" src="img/reason-devil-bridge.jpg"></img>
+          </div>
           <div class="reason">
             <h2 class="reason-title">Там есть мост дьявола</h2>
             <div class="reason-number">-№2-</div>
             <p>Да,по нему можно пройти!Если конечно вы осмелитесь</p>
           </div>
         </div>
-        <div class="reason-row reason-row-gray clearfix">
+        <div class="reason-row reason-row-grey">
           <div class="reason">
             <h2 class="reason-title">Небольшая площадь</h2>
             <div class="reason-number">-№3-</div>
@@ -99,10 +97,10 @@
       <div class="search">
         <h2 class="search-title">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <div class="search-button"><a href="#">Поиск гостиницы в Седоне</a></div>
+        <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
       </div>
       <div class="map">
-        <!-- <div class="map-canvas"> </div> -->
+        <div class="map-canvas"> </div>
         <div class="search-form">
           <form action="#" method="get">
             <input type="date" name="date" value="24 апреля 2014" placeholder="Дата заезда">
@@ -111,18 +109,15 @@
             <input type="tel" name="phone" value="" placeholder="Дети">
           </form>
         </div>
-        <footer class="main-footer clearfix">
-          <div class="hashtag">
-            <a href="#">#VISITSEDONA</a>
-          </div>
+        <footer class="main-footer map-main-footer clearfix">
+          <a class="hashtag" href="#">#VISITSEDONA</a>
          <div class="social">
-           <a href="#" class="social-btn social-btn-twit">Твиттер</a>
-           <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-           <a href="#" class="social-btn social-btn-youtube">Ютуб</a>
+           <a href="#" class="social-btn"><span class="icon-twitter"></span>Твиттер</a>
+           <a href="#" class="social-btn social-btn-fb"><span class="icon-facebook"></span>Фейсбук</a>
+           <a href="#" class="social-btn"><span class="icon-youtube"></span>Ютуб</a>
          </div>
-         <div class="copyright">Website by:<a href="#" class="btn">htmlacademy.ru</a></div>
+         <div class="copyright">Website by:<a href="#" class="copyright-logo"></a></div>
         </footer>
       </div>
-
   </body>
 </html>

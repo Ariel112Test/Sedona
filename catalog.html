@@ -8,36 +8,42 @@
     <link rel="stylesheet" href="css/normalize.css"></link>
   </head>
   <body>
-    <div class="wrapper">
-      <header class="main-header">
-        <nav class="main-navigation">
-          <!--
-          <ul>
-            <li>
-              <a href="#">Информация</a>
-            </li>
-            <li class="offset">
-              <a href="#">Фото и видео</a>
-            </li>
-           </ul>
-          <figure class="logo">
-            <a href="#">
-            </a>
-          </figure>
-          <ul>
-            <li>
-              <a href="#">Карта штата</a>
-            </li>
-            <li>
-              <a href="#">Гостиницы</a>
-            </li>
-          </ul>
-            -->
-        </nav>
-      </header>
-
+      <div class="wrapper">
+        <header class="main-header">
+          <nav class="main-navigation">
+            <ul>
+              <li>
+                <a href="index.html" class="active">Информация</a>
+              </li>
+              <li class="offset">
+                <a href="#">Фото и видео</a>
+              </li>
+              <li>
+                <a href="#">Карта штата</a>
+              </li>
+              <li>
+                <a href="catalog.html">Гостиницы</a>
+              </li>
+            </ul>
+           <div class="logo">
+              <a href="index.html">
+                <img width="138" height="70" alt="logo" src="img/logo.png">
+              </a>
+            </div>
+          </nav>
+        </header>
         <div class="catalog clearfix">
-            <form class="catalog-filter clearfix" action="#" method="get">
+          <form class="catalog-filter" action="#" method="get">
+                 <h2>Инфраструктура:</h2>
+                 <input id="type-pool" name="type-pool" checked="" type="checkbox">
+                 <label for="type-pool">Бассейн</label>
+                 <input id="type-parking" name="type-parking" type="checkbox">
+                 <label for="type-parking">Парковка</label>
+                 <input id="type-wi-fi" name="type-wi-fi" type="checkbox">
+                 <label for="WiFi">Wi-Fi</label>
+             </form>
+             <!--
+            <form class="catalog-filter" action="#" method="get">
                 <h2 class="catalog-title">Инфраструктура</h2>
                 <input type="checkbox" name="SwimmingPool" id="SwimmingPool" checked>
                 <label for="SwimmingPool">Бассейн</label>
@@ -46,7 +52,8 @@
                 <input type="checkbox" name="infrastructure" id="WiFi">
                 <label for="WiFi">Wi-Fi</label>
               </form>
-              <form class="catalog-filter clearfix" action="#" method="get">
+              -->
+              <form class="catalog-filter" action="#" method="get">
                 <h2 class="catalog-title">Тип жилья</h2>
                 <input type="checkbox" name="SwimmingPool" id="Hotel" checked>
                 <label for="Hotel">Гостинница</label>
@@ -56,7 +63,7 @@
                 <label for="Apartment">Апартаменты</label>
               </form>
 
-              <form action="form.php" method="GET">
+              <form class="catalog-range-filter" action="form.php" method="GET">
                 <div class="range-filter">
                   <div class="price-controls">
                     <label class="min-price">от <input name="min-price" type="text" value="0"></label>
@@ -70,20 +77,19 @@
                     <div class="toggle toggle-max"></div>
                   </div>
                 </div>
-
               </form>
+            </div>
 
               <div class="catalog-sort-search clearfix">
                 <div class="search-number">Найдено: 3</div>
                 <div class="sort-type">
-                  <a href="#">Сортировка:</a>
+                  <a href="#" class="sort-type-title">Сортировка:</a>
                   <a href="#" class="active">По цене</a>
                   <a href="#">По типу</a>
                   <a href="#">По функционалу</a>
                 </div>
-                <div class="sort-direction"></div>
+                <div class="sort-direction"><span class="icon-up-dir"></span><span class="icon-down-dir"></span></div>
               </div>
-
               <div class="catalog-item clearfix">
                 <div class="catalog-item-photo">
                   <img width="135" height="90" alt="Amara Resort & Spa" src="img/amara-resort-hotel.jpg">
@@ -105,8 +111,6 @@
                 </div>
               </div>
 
-
-<!--
               <div class="catalog-item clearfix">
                 <div class="catalog-item-photo">
                   <img width="135" height="90" alt="Desert Qual Inn" src="img/desert-qual-hotel.jpg">
@@ -127,7 +131,6 @@
                   <div class="catalog-item-rating">Рейтинг: 8,9</div>
                 </div>
               </div>
-
               <div class="catalog-item clearfix">
                 <div class="catalog-item-photo">
                   <img width="135" height="90" alt="Villas at Poco Diablo" src="img/villas-at-poco-diablo-hotel.jpg">
@@ -148,19 +151,17 @@
                   <div class="catalog-item-rating">Рейтинг: 9,2</div>
                 </div>
                </div>
-             -->
-           </div>
 
-       <footer class="main-footer catalog-footer clearfix">
+       <footer class="main-footer clearfix">
          <div class="hashtag">
            <a href="#">#VISITSEDONA</a>
          </div>
         <div class="social">
-          <a href="#" class="social-btn social-btn-twit">Твиттер</a>
-          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-          <a href="#" class="social-btn social-btn-youtube">Ютуб</a>
+          <a href="#" class="social-btn"><span class="icon-twitter"></span>Твиттер</a>
+          <a href="#" class="social-btn social-btn-fb"><span class="icon-facebook"></span>Фейсбук</a>
+          <a href="#" class="social-btn"><span class="icon-youtube"></span>Ютуб</a>
         </div>
-        <div class="copyright">Website by:<a href="#" class="btn">htmlacademy.ru</a></div>
+        <div class="copyright">Website by:<a href="#" class="copyright-logo"></a></div>
        </footer>
 
   </div>
