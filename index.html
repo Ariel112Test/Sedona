@@ -100,15 +100,36 @@
         <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
       </div>
       <div class="map">
-        <div class="map-canvas"> </div>
-        <div class="search-form">
-          <form action="#" method="get">
-            <input type="date" name="date" value="24 апреля 2014" placeholder="Дата заезда">
-            <input type="date" name="date" value="4 июля 2014" placeholder="Дата выезда">
-            <input type="text" name="name" value="" placeholder="Взрослые">
-            <input type="tel" name="phone" value="" placeholder="Дети">
+        <div class="map-canvas"></div>
+
+          <form action="#" class="form-search-hotels" method="get">
+            <fieldset title="Укажите дату заезда" class="clearfix form-date">
+              <label for="date-arrival">Дата заезда:</label>
+              <input id="date-arrival" placeholder="24 апреля 2014" required="" type="text">
+              <span class="icon-calendar"></span>
+            </fieldset>
+            <fieldset title="Укажите дату выезда" class="clearfix form-date">
+              <label for="date-leaving">Дата выезда:</label>
+              <input class="form-date" id="date-leaving" placeholder="4 июля 2014" required="" type="text">
+               <span class="icon-calendar"></span>
+            </fieldset>
+            <fieldset class="clearfix adult-children">
+              <fieldset class="adult" title="Укажите количество взрослых">
+                <label for="adult">Взрослые:</label>
+                <input value="-" id="adult-remove" name="adult-remove" type="button">
+                <input id="adult" value="2" type="text">
+                <input value="+" id="adult-add" name="adult-add" type="button">
+              </fieldset>
+              <fieldset class="children" title="Укажите количество детей">
+                <label for="children">Дети:</label>
+                <input value="-" id="children-remove" name="children-remove" type="button">
+                <input id="children" value="0" type="text">
+                <input value="+" id="children-add" name="children-add" type="button">
+              </fieldset>
+            </fieldset>
+            <input name="button-search-hotels" value="Найти" type="submit">
           </form>
-        </div>
+
         <footer class="main-footer map-main-footer clearfix">
           <a class="hashtag" href="#">#VISITSEDONA</a>
          <div class="social">

@@ -13,7 +13,7 @@
           <nav class="main-navigation">
             <ul>
               <li>
-                <a href="index.html" class="active">Информация</a>
+                <a href="index.html">Информация</a>
               </li>
               <li class="offset">
                 <a href="#">Фото и видео</a>
@@ -22,7 +22,7 @@
                 <a href="#">Карта штата</a>
               </li>
               <li>
-                <a href="catalog.html">Гостиницы</a>
+                <a href="catalog.html" class="active">Гостиницы</a>
               </li>
             </ul>
            <div class="logo">
@@ -32,38 +32,46 @@
             </div>
           </nav>
         </header>
-        <div class="catalog clearfix">
-          <form class="catalog-filter" action="#" method="get">
-                 <h2>Инфраструктура:</h2>
-                 <input id="type-pool" name="type-pool" checked="" type="checkbox">
-                 <label for="type-pool">Бассейн</label>
-                 <input id="type-parking" name="type-parking" type="checkbox">
-                 <label for="type-parking">Парковка</label>
-                 <input id="type-wi-fi" name="type-wi-fi" type="checkbox">
-                 <label for="WiFi">Wi-Fi</label>
-             </form>
-             <!--
-            <form class="catalog-filter" action="#" method="get">
-                <h2 class="catalog-title">Инфраструктура</h2>
-                <input type="checkbox" name="SwimmingPool" id="SwimmingPool" checked>
-                <label for="SwimmingPool">Бассейн</label>
-                <input type="checkbox" name="infrastructure" id="Parking">
-                <label for="Parking">Парковка</label>
-                <input type="checkbox" name="infrastructure" id="WiFi">
-                <label for="WiFi">Wi-Fi</label>
-              </form>
-              -->
-              <form class="catalog-filter" action="#" method="get">
-                <h2 class="catalog-title">Тип жилья</h2>
-                <input type="checkbox" name="SwimmingPool" id="Hotel" checked>
-                <label for="Hotel">Гостинница</label>
-                <input type="checkbox" name="infrastructure" id="Motel" checked>
-                <label for="Motel">Мотель</label>
-                <input type="checkbox" name="infrastructure" id="Apartment" checked>
-                <label for="Apartment">Апартаменты</label>
-              </form>
-
-              <form class="catalog-range-filter" action="form.php" method="GET">
+        <form action="#" class="catalog clearfix" method="get">
+               <div class="catalog-filter">
+                   <h2>Инфраструктура:</h2>
+                   <input id="type-pool" name="type-pool" checked="" type="checkbox">
+                   <label for="type-pool">Бассейн</label>
+                   <input id="type-parking" name="type-parking" type="checkbox">
+                   <label for="type-parking">Парковка</label>
+                   <input id="type-wi-fi" name="type-wi-fi" type="checkbox">
+                   <label for="type-wi-fi">WI-FI</label>
+               </div>
+               <div class="catalog-filter">
+                   <h2>Тип жилья:</h2>
+                   <input id="type-hotel" name="type-hotel" checked="" type="checkbox">
+                   <label for="type-hotel">Гостиница</label>
+                   <input id="type-motel" name="type-motel" checked="" type="checkbox">
+                   <label for="type-motel">Мотель</label>
+                   <input id="type-apartment" name="type-apartment" checked="" type="checkbox">
+                   <label for="type-apartment">Апартаменты</label>
+               </div>
+               <div class="catalog-range-filter" action="form.php" method="GET">
+                   <h2>Стоимость в сутки (Р):</h2>
+                   <div class="price-controls">
+                       <div class="price-controls-center">
+                           <label for="min-price">от <input name="min-price" value="0" class="min-price" id="min-price" type="text"></label>
+                       </div>
+                       <div class="price-controls-center">
+                           <label for="max-price">до <input name="max-price" value="3000" class="max-price" id="max-price" type="text"></label>
+                        </div>
+                   </div>
+                   <div class="range-controls">
+                       <div class="scale">
+                         <div class="bar" style="width:84%;"></div>
+                       </div>
+                       <div class="toggle toggle-min"></div>
+                       <div class="toggle toggle-max"></div>
+                   </div>
+               </div>
+           </form>
+      <!--
+              <div class="catalog-range-filter" action="form.php" method="GET">
                 <div class="range-filter">
                   <div class="price-controls">
                     <label class="min-price">от <input name="min-price" type="text" value="0"></label>
@@ -77,8 +85,9 @@
                     <div class="toggle toggle-max"></div>
                   </div>
                 </div>
+              </div>
               </form>
-            </div>
+              -->
 
               <div class="catalog-sort-search clearfix">
                 <div class="search-number">Найдено: 3</div>
