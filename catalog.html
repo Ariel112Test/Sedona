@@ -51,43 +51,24 @@
                    <input id="type-apartment" name="type-apartment" checked="" type="checkbox">
                    <label for="type-apartment">Апартаменты</label>
                </div>
-               <div class="catalog-range-filter" action="form.php" method="GET">
-                   <h2>Стоимость в сутки (Р):</h2>
-                   <div class="price-controls">
-                       <div class="price-controls-center">
-                           <label for="min-price">от <input name="min-price" value="0" class="min-price" id="min-price" type="text"></label>
-                       </div>
-                       <div class="price-controls-center">
-                           <label for="max-price">до <input name="max-price" value="3000" class="max-price" id="max-price" type="text"></label>
-                        </div>
+
+               <div class="filter-range">
+                 <div class="filter-range-title">Стоимость в сутки (р):</div>
+                 <div class="price-controls">
+                   <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                   <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                 </div>
+                 <div class="range-controls">
+                   <div class="scale">
+                     <div class="bar"></div>
                    </div>
-                   <div class="range-controls">
-                       <div class="scale">
-                         <div class="bar" style="width:84%;"></div>
-                       </div>
-                       <div class="toggle toggle-min"></div>
-                       <div class="toggle toggle-max"></div>
-                   </div>
+                   <div class="range-toggle range-toggle-min"></div>
+                   <div class="range-toggle range-toggle-max"></div>
+                 </div>
+                 <button class="btn-transparent" type="submit">Показать</button>
                </div>
+
            </form>
-      <!--
-              <div class="catalog-range-filter" action="form.php" method="GET">
-                <div class="range-filter">
-                  <div class="price-controls">
-                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                    <label class="max-price">до <input name="max-price" type="text" value="3000"></label>
-                  </div>
-                  <div class="range-controls">
-                    <div class="scale">
-                      <div class="bar"></div>
-                    </div>
-                    <div class="toggle toggle-min"></div>
-                    <div class="toggle toggle-max"></div>
-                  </div>
-                </div>
-              </div>
-              </form>
-              -->
 
               <div class="catalog-sort-search clearfix">
                 <div class="search-number">Найдено: 3</div>
@@ -115,7 +96,12 @@
                   </div>
                 </div>
                 <div class="catalog-item-stars-rating">
-                  <div class="catalog-item-stars"></div>
+                  <div class="catalog-item-stars">                    
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                  </div>
                   <div class="catalog-item-rating">Рейтинг: 8,5</div>
                 </div>
               </div>

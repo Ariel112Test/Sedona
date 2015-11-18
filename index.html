@@ -44,7 +44,7 @@
           <div class="reason">
             <h2 class="reason-title">Настоящий городок</h2>
             <div class="reason-number">-№1-</div>
-            <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="reason-picture">
             <img alt="" width="800" height="256" src="img/reasons-town.jpg"></img>
@@ -116,15 +116,19 @@
             <fieldset class="clearfix adult-children">
               <fieldset class="adult" title="Укажите количество взрослых">
                 <label for="adult">Взрослые:</label>
-                <input value="-" id="adult-remove" name="adult-remove" type="button">
-                <input id="adult" value="2" type="text">
-                <input value="+" id="adult-add" name="adult-add" type="button">
+                <div class="counter">
+                  <input value="-" id="adult-remove" name="adult-remove" type="button">
+                  <input id="adult" value="2" type="text">
+                  <input value="+" id="adult-add" name="adult-add" type="button">
+                </div>
               </fieldset>
               <fieldset class="children" title="Укажите количество детей">
                 <label for="children">Дети:</label>
-                <input value="-" id="children-remove" name="children-remove" type="button">
-                <input id="children" value="0" type="text">
-                <input value="+" id="children-add" name="children-add" type="button">
+                <div class="counter">
+                  <input value="-" id="children-remove" name="children-remove" type="button">
+                  <input id="children" value="0" type="text">
+                  <input value="+" id="children-add" name="children-add" type="button">
+                </div>
               </fieldset>
             </fieldset>
             <input name="button-search-hotels" value="Найти" type="submit">
